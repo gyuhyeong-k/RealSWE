@@ -59,8 +59,6 @@ realswe construct \
 
 ### Information composition
 
-A composition is a string of field letters, joined in the order given.
-
 <table>
   <thead>
     <tr><th colspan="2">Bug fix</th><th colspan="2">Feature request</th></tr>
