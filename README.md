@@ -19,7 +19,7 @@ Evaluating seven LLMs with RealSWE shows that:
 
 - Realistic inputs **reduce resolution rates by 6.4 pp on average** and **can change model rankings.**
 - **_Desired Behavior_ and _Motivation_ significantly affect performance**, whereas **_Environment Information_ and _Reproduction Steps_ add tokens without measurable benefit.**
-- Linguistic style has **only small, model-dependent effects**.
+- Linguistic style has **only small, model-dependent effects.**
 
 This repository provides two components:
 
