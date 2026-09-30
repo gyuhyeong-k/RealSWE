@@ -10,7 +10,7 @@
 </div>
 
 <p align="center">
-  <img src="assets/teaser.svg" width="55%">
+  <img src="assets/teaser.svg" width="60%">
 </p>
 
 Coding agents are commonly evaluated on SWE-bench-style benchmarks built from curated GitHub issues, which are detailed, well-structured, and long, whereas everyday user requests are short, informal, and sparse. RealSWE addresses this gap with 381 multi-variant task families derived from SWE-bench Verified and SWE-bench Pro. Each family shares the same underlying task and gold patch while varying information composition and linguistic style.
