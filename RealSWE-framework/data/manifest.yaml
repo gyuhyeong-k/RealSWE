@@ -1,0 +1,49 @@
+format_version: 1
+artifact: realswe_task_families
+data_file: task-families.jsonl
+instances: 381
+field_aliases:
+  bug:
+    P: describe_the_bug
+    D: expected_behavior
+    R: reproduction_code
+    E: environment
+    A: additional_context
+  feature:
+    P: desired_solution
+    M: problem_motivation
+    A: additional_context
+sources:
+  swebench_verified:
+    dataset: SWE-bench/SWE-bench_Verified
+    revision: 91aa3ed51b709be6457e12d00300a6a596d4c6a3
+  swebench_pro:
+    dataset: ScaleAI/SWE-bench_Pro
+    revision: 7ab5114912baf22bb098818e604c02fe7ad2c11f
+selection:
+  candidate_instances: 403
+  selected_instances: 381
+  excluded_instances: 22
+  excluded_instance_ids:
+  - astropy__astropy-13453
+  - django__django-13195
+  - django__django-14631
+  - django__django-15128
+  - instance_ansible__ansible-cd9c4eb5a6b2bfaf4a6709f001ce3d0c92c1eed2-v0f01c69f1e2528b935359cfe578530722bca2c59
+  - instance_element-hq__element-web-880428ab94c6ea98d3d18dcaeb17e8767adcb461-vnan
+  - instance_internetarchive__openlibrary-77c16d530b4d5c0f33d68bead2c6b329aee9b996-ve8c8d62a2b60610a3c4631f5f23ed866bada9818
+  - instance_internetarchive__openlibrary-7bf3238533070f2d24bafbb26eedf675d51941f6-v08d8e8889ec945ab821fb156c04c7d2e2810debb
+  - instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb
+  - instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310
+  - instance_protonmail__webclients-708ed4a299711f0fa79a907cc5847cfd39c0fc71
+  - instance_qutebrowser__qutebrowser-bedc9f7fadf93f83d8dee95feeecb9922b6f063f-v2ef375ac784985212b1805e1d0431dc8f1b3c171
+  - instance_tutao__tutanota-09c2776c0fce3db5c6e18da92b5a45dce9f013aa-vbc0d9ba8f0071fbe982809910959a6ff8884dbbf
+  - instance_tutao__tutanota-1e516e989b3c0221f4af6b297d9c0e4c43e4adc3-vbc0d9ba8f0071fbe982809910959a6ff8884dbbf
+  - matplotlib__matplotlib-20826
+  - matplotlib__matplotlib-23412
+  - matplotlib__matplotlib-24637
+  - matplotlib__matplotlib-25332
+  - scikit-learn__scikit-learn-25931
+  - sphinx-doc__sphinx-11510
+  - sphinx-doc__sphinx-8595
+  - sympy__sympy-13878

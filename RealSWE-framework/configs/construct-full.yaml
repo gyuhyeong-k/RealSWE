@@ -1,0 +1,5 @@
+construct:
+  name: realswe-full
+  style: paper-default
+  bug: PDREA
+  feature: PMA

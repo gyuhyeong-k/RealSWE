@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "realswe"
+version = "0.1.0"
+description = "Construct reproducible RealSWE benchmark variants."
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.92",
+  "pydantic>=2.7",
+  "PyYAML>=6.0",
+]
+
+[project.scripts]
+realswe = "realswe.cli:main"
+RealSWE = "realswe.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.data-files]
+"share/realswe" = ["data/task-families.jsonl", "data/manifest.yaml"]
+"share/realswe/styles/paper-default" = [
+  "data/styles/paper-default/data.jsonl",
+  "data/styles/paper-default/manifest.yaml",
+]
+"share/realswe/configs" = [
+  "configs/construct-full.yaml",
+  "configs/construct-bench.yaml",
+  "configs/construct-minimal.yaml",
+  "configs/rephrase-example.yaml",
+]

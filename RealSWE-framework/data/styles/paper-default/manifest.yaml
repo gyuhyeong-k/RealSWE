@@ -1,0 +1,19 @@
+format_version: 1
+artifact: realswe_style_profile
+name: paper-default
+status: complete
+immutable: true
+instances: 381
+data_file: data.jsonl
+description: The linguistic style used for the published RealSWE-bench.
+generation:
+  source: original paper pipeline
+  model: gpt-5.4-2026-03-05
+  reasoning_effort: low
+  prompt:
+    version: paper-original
+  style:
+    formality: casual
+    sentence_type: imperative
+    certainty: confident
+    perspective: non_first_person
