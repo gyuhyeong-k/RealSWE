@@ -10,15 +10,15 @@
 </div>
 
 <p align="center">
-  <img src="assets/teaser.svg" width="70%">
+  <img src="assets/teaser.svg" width="55%">
 </p>
 
 Coding agents are commonly evaluated on SWE-bench-style benchmarks built from curated GitHub issues, which are detailed, well-structured, and long, whereas everyday user requests are short, informal, and sparse. RealSWE addresses this gap with 381 multi-variant task families derived from SWE-bench Verified and SWE-bench Pro. Each family shares the same underlying task and gold patch while varying information composition and linguistic style.
 
 Evaluating seven LLMs with RealSWE shows that:
 
-- Realistic inputs **reduce resolution rates by 6.4 pp on average** and can change model rankings.
-- **_Desired Behavior_ and _Motivation_ significantly affect performance**, whereas _Environment Information_ and _Reproduction Steps_ add tokens without measurable benefit.
+- Realistic inputs **reduce resolution rates by 6.4 pp on average** and **can change model rankings.**
+- **_Desired Behavior_ and _Motivation_ significantly affect performance**, whereas **_Environment Information_ and _Reproduction Steps_ add tokens without measurable benefit.**
 - Linguistic style has **only small, model-dependent effects**.
 
 This repository provides two components:
@@ -28,7 +28,7 @@ This repository provides two components:
 
 ## RealSWE-bench
 
-The benchmark is available in [`RealSWE-bench/tasks.jsonl`](RealSWE-bench/tasks.jsonl) and on [Hugging Face](https://huggingface.co/datasets/gyuhyeong-k/RealSWE-bench):
+The benchmark is available in [`RealSWE-bench/tasks.jsonl`](RealSWE-bench/tasks.jsonl) and on [`Hugging Face`](https://huggingface.co/datasets/gyuhyeong-k/RealSWE-bench):
 
 ```python
 from datasets import load_dataset
@@ -36,7 +36,7 @@ from datasets import load_dataset
 ds = load_dataset("gyuhyeong-k/RealSWE-bench", split="train")
 ```
 
-It contains 381 tasks, 192 bug fixes and 189 feature requests. See the [dataset card](https://huggingface.co/datasets/gyuhyeong-k/RealSWE-bench) for the data fields.
+It contains 381 tasks, 192 bug fixes and 189 feature requests. See the [`dataset card`](https://huggingface.co/datasets/gyuhyeong-k/RealSWE-bench) for the data fields.
 
 ## RealSWE-framework
 
